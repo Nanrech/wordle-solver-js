@@ -1,0 +1,56 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  background-color: #181a1b;
+  color: #ffffff;
+  font-family: sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: top;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+#greenRow, #yellowRow {
+  display: flex;
+  gap: 0.3rem;
+}
+
+input.green-letter, input.yellow-letter, input.extra {
+  box-sizing: border-box;
+  height: 3rem;
+  font-size: 1.5rem;
+  border: 1.5px solid #3a3a3c;
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+input.green-letter, input.yellow-letter {
+  width: 3rem;
+}
+
+.green-letter {
+  background-color: #538d4e;
+}
+
+.yellow-letter {
+  background-color: #b59f3b;
+}
+
+input.extra {
+  width: calc(5 * 3rem + 4 * 0.3rem);
+  text-align: left;
+  background-color: #3a3a3c;
+  transition: width 0.2s;
+}
+
+#wordOutput {
+  height: 3rem;
+  margin-top: 1.5rem;
+  color: #fff;
+  text-align: left;
+}

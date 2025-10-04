@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Wordle Solver</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="board" role="main">
+  </div>
+    <label for="greenRow">Correct Letters</label>
+    <div id="greenRow">
+      <input class="green-letter" type="text" maxlength="1"/>
+      <input class="green-letter" type="text" maxlength="1"/>
+      <input class="green-letter" type="text" maxlength="1"/>
+      <input class="green-letter" type="text" maxlength="1"/>
+      <input class="green-letter" type="text" maxlength="1"/>
+    </div>
+
+    <label for="yellowRow">Misplaced Letters</label>
+    <div id="yellowRow">
+      <input class="yellow-letter" type="text"/>
+      <input class="yellow-letter" type="text"/>
+      <input class="yellow-letter" type="text"/>
+      <input class="yellow-letter" type="text"/>
+      <input class="yellow-letter" type="text"/>
+    </div>
+
+    <label for="wrongInput">Missing Letters</label>
+    <input id="wrongInput" class="extra" type="text" aria-label="extra text input"/>
+
+    <div id="wordOutput"></div>
+  <script src="words.js"></script>
+  <script src="main.js"></script>
+</body>
+
+</html>
